@@ -73,7 +73,7 @@ npm >= 8.0.0
 
 Clone the repository
 ```bash
-git clone https://github.com/yourusername/connectify.git
+git clone https://github.com/shirosensei/connectify.git
 cd connectify
 ```
 
@@ -143,5 +143,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/shirosensei)
+Your Name - [@shirosensei](https://twitter.com/shirosensei)
 Project Link: [https://github.com/shirosensei/connectify.git](https://github.com/shirosensei/connectify.git)
