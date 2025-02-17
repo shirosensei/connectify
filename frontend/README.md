@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Connectify Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Vite frontend application for the Connectify social platform.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- TypeScript
+- Vite
+- CSS Modules
 
-## Expanding the ESLint configuration
+## Directory Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+src/
+├── assets/        # Images, fonts, and other static files
+├── components/    # Reusable React components
+├── hooks/         # Custom React hooks
+├── services/      # API service calls
+├── types/         # TypeScript type definitions
+├── utils/         # Utility functions
+├── App.tsx        # App-specific styles
+├── index.css      # Global styles
+└── main.tsx       # Application entry point
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+1. Install dependencies:
+```bash
+npm install
 ```
+
+2. Set up environment variables:
+```bash
+cp .env.example .env
+```
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+## Available Scripts
+
+```bash
+npm run dev        # Start development server
+npm run build      # Build for production
+npm run preview    # Preview production build
+npm run lint       # Run ESLint
+npm run type-check # Run TypeScript compiler check
+```
+
+## Development Guidelines
+
+- Use TypeScript for all new files
+- Follow the established folder structure
+- Create reusable components in `components/`
+- Handle API calls in `services/`
+- Define types in `types/`
+- Use custom hooks for shared logic
