@@ -9,7 +9,7 @@ A modern social hub platform built with cutting-edge technologies to connect peo
   - React Native
   - TypeScript
   - Astro
-  -Tailwind CSS
+  - Tailwind CSS
 
 - **Backend:**
   - Node.js
