@@ -1,14 +1,6 @@
 import pool from "../config/database";
 import { z } from "zod";
 
-export interface IUser {
-  id: number;
-  username: string;
-  email: string;
-  password: string;
-  created_at: Date;
-  updated_at: Date;
-}
 
 // Define zod schema for user object runtime validation
 export const userSchema = z.object({
@@ -21,7 +13,7 @@ export const userSchema = z.object({
 });
 
 // Define Type for User object
-export type IUserSchema = z.infer<typeof userSchema>;
+export type IUser = z.infer<typeof userSchema>;
 
 
 class User {

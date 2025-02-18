@@ -13,14 +13,14 @@ Node.js + Express backend server for the Connectify social platform.
 ## Directory Structure
 
 ```
-├── config/        # Configuration files
-├── controllers/   # Route controllers
-├── middlewares/   # Express middlewares
-├── models/        # Database models
-├── services/      # Business logic
 └── src/
-├── types/    # TypeScript type definitions
-└── utils/    # Utility functions
+        ├── config/        # Configuration files
+        ├── controllers/   # Route controllers
+        ├── middlewares/   # Express middlewares
+        ├── models/        # Database models
+        ├── services/      # Business logic
+        ├── types/    # TypeScript type definitions
+        └── utils/    # Utility functions
 ```
 
 ## Getting Started
